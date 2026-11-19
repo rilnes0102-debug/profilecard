@@ -1,0 +1,35 @@
+---
+const {judul} = Astro.props;
+---
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{judul}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	body{
+		margin: 0;
+		min-height: 100phvh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 24px;
+		font-family: Arial, Helvetica, sans-serif;
+		background: linear-gradient(135deg, rgb(0, 47, 148))
+	}
+</style>
